@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://s4g6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "o que significa ATOMO?"
+type = 0
+options = Array[String](["bola", "esfera", "sei nao", "nao divisivel"])
+currect = "nao divisivel"

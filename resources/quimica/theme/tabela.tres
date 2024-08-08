@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=4 format=3 uid="uid://c0teplyomool1"]
+
+[ext_resource type="Script" path="res://script/resource/theme.gd" id="1_ei2eu"]
+[ext_resource type="Resource" uid="uid://s4g6r82u2hxk" path="res://resources/quimica/banco/tipografia.tres" id="2_8pvts"]
+[ext_resource type="Resource" uid="uid://cwyipfjiod30m" path="res://resources/quimica/banco/modelos.tres" id="3_f1esn"]
+
+[resource]
+script = ExtResource("1_ei2eu")
+theme = Array[Resource("res://script/resource/question.gd")]([ExtResource("2_8pvts"), ExtResource("3_f1esn"), ExtResource("2_8pvts"), ExtResource("3_f1esn")])
