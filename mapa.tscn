@@ -33,6 +33,7 @@ position = Vector2(1301, 6)
 spriteprof = "res://.godot/imported/jonata.png-f09a44eded6be213ce6dc8ded9342e53.ctex"
 
 [node name="mobileTouch" type="CanvasLayer" parent="."]
+visible = false
 script = ExtResource("3_8yu4n")
 
 [node name="TouchUp" type="TouchScreenButton" parent="mobileTouch"]
