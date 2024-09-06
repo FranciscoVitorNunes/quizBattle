@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7mk4tn4p6gap"
-path="res://.godot/imported/ui_pressed.png-33f2b61e4172ae3d6222be755952df93.ctex"
+uid="uid://dw3g02hx6ku63"
+path="res://.godot/imported/machi.png-f0ff2204462564bbc3ee93e84a67b1e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/ui_pressed.png"
-dest_files=["res://.godot/imported/ui_pressed.png-33f2b61e4172ae3d6222be755952df93.ctex"]
+source_file="res://sprites/professores/machi.png"
+dest_files=["res://.godot/imported/machi.png-f0ff2204462564bbc3ee93e84a67b1e7.ctex"]
 
 [params]
 

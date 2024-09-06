@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw3g02hx6ku63"
-path="res://.godot/imported/machi.png-3676f2b17fec0346344daf00820d8efb.ctex"
+uid="uid://bpicic81hfxj1"
+path="res://.godot/imported/balao_pergunta.png-dd837aa34fbf9777a1e4e80b9f0c2387.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/machi.png"
-dest_files=["res://.godot/imported/machi.png-3676f2b17fec0346344daf00820d8efb.ctex"]
+source_file="res://sprites/quiz/balao_pergunta.png"
+dest_files=["res://.godot/imported/balao_pergunta.png-dd837aa34fbf9777a1e4e80b9f0c2387.ctex"]
 
 [params]
 

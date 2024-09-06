@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpicic81hfxj1"
-path="res://.godot/imported/balao_pergunta.png-9d7fd00dc84618f6cb4be488369d7fe2.ctex"
+uid="uid://b7mk4tn4p6bhp"
+path="res://.godot/imported/tile.png-b7b1e175c68c9c698ae812d6132a214e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://balao_pergunta.png"
-dest_files=["res://.godot/imported/balao_pergunta.png-9d7fd00dc84618f6cb4be488369d7fe2.ctex"]
+source_file="res://sprites/tilemap/tile.png"
+dest_files=["res://.godot/imported/tile.png-b7b1e175c68c9c698ae812d6132a214e.ctex"]
 
 [params]
 
