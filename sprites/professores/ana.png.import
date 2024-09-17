@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5mh4x7jot7rq"
-path="res://.godot/imported/jonata.png-f09a44eded6be213ce6dc8ded9342e53.ctex"
+uid="uid://bpicic81hlxj1"
+path="res://.godot/imported/ana.png-fad21594644c31fcf9aaf685c5fa37a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/jonata.png"
-dest_files=["res://.godot/imported/jonata.png-f09a44eded6be213ce6dc8ded9342e53.ctex"]
+source_file="res://sprites/professores/ana.png"
+dest_files=["res://.godot/imported/ana.png-fad21594644c31fcf9aaf685c5fa37a9.ctex"]
 
 [params]
 
