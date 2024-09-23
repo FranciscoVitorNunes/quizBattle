@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q5g6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Em qual grupo da tabela periódica estão os halogênios?"
+type = 0
+options = Array[String](["1", "2", "17", "18"])
+currect = "17"
+

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q4g6r82u2had"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="4_bwnvs"]
+
+[resource]
+script = ExtResource("4_bwnvs")
+question_info = "Qual é a primeira lei de Newton?"
+type = 0
+options = Array[String](["Inércia", "Ação e reação", "F = m*a", "Conservação de energia"])
+currect = "Inércia"
+

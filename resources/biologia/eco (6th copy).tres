@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://cxnsofkt5qtdu"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Principal gás responsável pelo efeito estufa:"
+type = 0
+options = Array[String](["Oxigênio", "Dióxido de carbono", "Metano", "Nitrogênio"])
+currect = "Dióxido de carbono"

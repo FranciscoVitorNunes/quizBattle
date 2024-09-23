@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q5g6r84r2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="5_bwnvs"]
+
+[resource]
+script = ExtResource("5_bwnvs")
+question_info = "Qual é a unidade de medida de trabalho?"
+type = 0
+options = Array[String](["Joule", "Watt", "Newton", "Pascal"])
+currect = "Joule"
+

@@ -18,7 +18,7 @@ func _ready():
 		buttons.append(button)
 		
 	_random_array(quiz.theme)
-	
+	$Control/VBoxContainer2/Button1.grab_focus()
 	
 	load_quiz()
 
@@ -69,21 +69,28 @@ func _game_over() -> void:
 
 
 func _on_restart_pressed():
-	
-	queue_free()
+	$".".queue_free()
 
+func _on_button_1_focus_entered() -> void:
+	$Control/VBoxContainer2/Button1/altA.texture= preload("res://sprites/professores/icons/51 Sem Título_20240922222215.png")
+
+func _on_button_1_focus_exited() -> void:
+	$Control/VBoxContainer2/Button1/altA.texture = null
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+func _on_button_2_focus_entered() -> void:
+	$Control/VBoxContainer2/Button2/altB.texture= preload("res://sprites/professores/icons/51 Sem Título_20240922222215.png")
+
+func _on_button_2_focus_exited() -> void:
+	$Control/VBoxContainer2/Button2/altB.texture= null
+
+func _on_button_3_focus_entered() -> void:
+	$Control/VBoxContainer2/Button3/altC.texture= preload("res://sprites/professores/icons/51 Sem Título_20240922222215.png")
+
+func _on_button_3_focus_exited() -> void:
+	$Control/VBoxContainer2/Button3/altC.texture= null
+
+func _on_button_4_focus_entered() -> void:
+	$Control/VBoxContainer2/Button4/altD.texture= preload("res://sprites/professores/icons/51 Sem Título_20240922222215.png")
+
+func _on_button_4_focus_exited() -> void:
+	$Control/VBoxContainer2/Button4/altD.texture= null

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q1g6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual dos seguintes elementos é um gás nobre?"
+type = 0
+options = Array[String](["Cloro", "Oxigênio", "Hélio", "Enxofre"])
+currect = "Hélio"
+

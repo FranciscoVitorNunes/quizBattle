@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://bldytkk2l8ywi"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Q é líquido à temperatura ambiente:"
+type = 0
+options = Array[String](["Mercúrio", "Cobre", "Zinco", "Bromo"])
+currect = "Mercúrio"

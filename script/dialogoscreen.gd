@@ -23,11 +23,11 @@ func _ready() -> void:
 
 	
 func _process(delta) -> void:
-	if  Input.is_action_pressed("ui_accept") and _dialog.visible_ratio < 1:
+	if  Input.is_action_pressed("espace") and _dialog.visible_ratio < 1:
 		_steep = .01
 		return
 	_steep = 0.05
-	if  Input.is_action_just_pressed("ui_accept"):
+	if  Input.is_action_just_pressed("espace"):
 		_id += 1
 		if _id == data.size():
 			Globals.is_dialog_open = false
@@ -37,7 +37,6 @@ func _process(delta) -> void:
 		
 
 func _initialize_dialog() -> void:
-	_name.text = data[_id]["title"]
 	_dialog.text = data[_id]["dialog"]
 	_faceset.texture = load(data[_id]["faceset"])
 
@@ -65,3 +64,8 @@ func _on_next_dialog_pressed():
 			return
 		_initialize_dialog()
 		
+
+
+func _on_quit_pressed() -> void:
+	Globals.is_dialog_open = false
+	queue_free()

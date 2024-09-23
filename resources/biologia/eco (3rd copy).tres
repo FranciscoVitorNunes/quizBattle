@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://unllbjkjy0yn"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "O que é um ecossistema?"
+type = 0
+options = Array[String](["Uma coleção de organismos da mesma espécie", "Um ambiente físico sem vida", "A interação entre seres vivos e seu ambiente", "Uma área geográfica definida"])
+currect = "A interação entre seres vivos e seu ambiente"

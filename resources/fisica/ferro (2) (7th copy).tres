@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q8g6r82o3dxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="8_bwnvs"]
+
+[resource]
+script = ExtResource("8_bwnvs")
+question_info = "Qual é a definição de aceleração?"
+type = 0
+options = Array[String](["Mudança de velocidade", "Mudança de direção", "Força aplicada", "Todas as anteriores"])
+currect = "Mudança de velocidade"
+

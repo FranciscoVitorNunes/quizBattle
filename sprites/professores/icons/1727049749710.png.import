@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kmbt06rhx8qc"
-path="res://.godot/imported/spr_player.png-5a8a0dd67c63d08652a3cb7ffacd71fe.ctex"
+uid="uid://cvlwsbtcdtcrb"
+path="res://.godot/imported/1727049749710.png-ff2d002eb9ef3a12d2f462b81d83076f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/spr_player.png"
-dest_files=["res://.godot/imported/spr_player.png-5a8a0dd67c63d08652a3cb7ffacd71fe.ctex"]
+source_file="res://sprites/professores/icons/1727049749710.png"
+dest_files=["res://.godot/imported/1727049749710.png-ff2d002eb9ef3a12d2f462b81d83076f.ctex"]
 
 [params]
 

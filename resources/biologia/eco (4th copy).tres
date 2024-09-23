@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://c5lub15r05yac"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual é a função dos produtores em um ecossistema?"
+type = 0
+options = Array[String](["Decompor matéria orgânica", "Consumir outros organismos", "Produzir energia a partir da luz solar", "Controlar a população de herbívoros"])
+currect = "Produzir energia a partir da luz solar"

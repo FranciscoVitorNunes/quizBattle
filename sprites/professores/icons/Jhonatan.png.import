@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kmbt06rhx8qc"
-path="res://.godot/imported/spr_player.png-5a8a0dd67c63d08652a3cb7ffacd71fe.ctex"
+uid="uid://bu3prqragt41j"
+path="res://.godot/imported/Jhonatan.png-e0b96bd44a337becd4c7ba807f8f61f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player/spr_player.png"
-dest_files=["res://.godot/imported/spr_player.png-5a8a0dd67c63d08652a3cb7ffacd71fe.ctex"]
+source_file="res://sprites/professores/icons/Jhonatan.png"
+dest_files=["res://.godot/imported/Jhonatan.png-e0b96bd44a337becd4c7ba807f8f61f9.ctex"]
 
 [params]
 

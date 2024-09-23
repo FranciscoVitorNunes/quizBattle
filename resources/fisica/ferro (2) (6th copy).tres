@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q9o6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="7_bwnvs"]
+
+[resource]
+script = ExtResource("7_bwnvs")
+question_info = "Como se chama o movimento de um corpo em queda livre?"
+type = 0
+options = Array[String](["Uniforme", "Uniformemente acelerado", "Retilíneo", "Circular"])
+currect = "Uniformemente acelerado"
+

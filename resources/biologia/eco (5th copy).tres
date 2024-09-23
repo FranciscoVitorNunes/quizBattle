@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://duhobolo2ac0o"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "O que caracteriza uma cadeia alimentar?"
+type = 0
+options = Array[String](["A interação entre espécies de um ecossistema", "A transferência de energia entre níveis tróficos", "A competição por recursos", "A diversidade de organismos"])
+currect = "A transferência de energia entre níveis tróficos"

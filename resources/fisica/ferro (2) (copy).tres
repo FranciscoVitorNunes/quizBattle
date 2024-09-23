@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q10g6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="10_bwnvs"]
+
+[resource]
+script = ExtResource("10_bwnvs")
+question_info = "Qual é a lei que relaciona pressão e volume de um gás?"
+type = 0
+options = Array[String](["Lei de Boyle", "Lei de Charles", "Lei de Avogadro", "Lei de Dalton"])
+currect = "Lei de Boyle"
+

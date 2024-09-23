@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=13 format=3 uid="uid://dq3dhc28ri6s"]
+
+[ext_resource type="Script" path="res://script/resource/theme.gd" id="1_dx2rm"]
+[ext_resource type="Script" path="res://script/resource/question.gd" id="2_o2wmn"]
+[ext_resource type="Resource" uid="uid://q2g6r82u2hbk" path="res://resources/fisica/ferro (1).tres" id="3_fnwt1"]
+[ext_resource type="Resource" uid="uid://q4g6r82u2had" path="res://resources/fisica/ferro (2) (3rd copy).tres" id="4_d3vtm"]
+[ext_resource type="Resource" uid="uid://q5g6r84r2hxk" path="res://resources/fisica/ferro (2) (4th copy).tres" id="5_ibuqt"]
+[ext_resource type="Resource" uid="uid://q63r82u2hxk" path="res://resources/fisica/ferro (2) (5th copy).tres" id="6_ckuxx"]
+[ext_resource type="Resource" uid="uid://rao6r82u2hxk" path="res://resources/fisica/ferro (2) (6th copy).tres" id="7_82i4p"]
+[ext_resource type="Resource" uid="uid://q8g6r82o3dxk" path="res://resources/fisica/ferro (2) (7th copy).tres" id="8_ipyov"]
+[ext_resource type="Resource" uid="uid://q2g6r82u2axk" path="res://resources/fisica/ferro.tres" id="9_6hcic"]
+[ext_resource type="Resource" uid="uid://bstpf1co08ywi" path="res://resources/fisica/ferro (2) (another copy).tres" id="10_st10r"]
+[ext_resource type="Resource" uid="uid://bldytkk2l8ywi" path="res://resources/fisica/ferro (2) (copy).tres" id="11_f330j"]
+[ext_resource type="Resource" uid="uid://q3g6r82u4hxk" path="res://resources/fisica/ferro (2).tres" id="12_446tj"]
+
+[resource]
+script = ExtResource("1_dx2rm")
+theme = Array[ExtResource("2_o2wmn")]([ExtResource("3_fnwt1"), ExtResource("4_d3vtm"), ExtResource("5_ibuqt"), ExtResource("6_ckuxx"), ExtResource("7_82i4p"), ExtResource("8_ipyov"), ExtResource("9_6hcic"), ExtResource("10_st10r"), ExtResource("11_f330j"), ExtResource("12_446tj")])

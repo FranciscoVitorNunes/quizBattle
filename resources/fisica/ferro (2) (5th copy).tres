@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q63r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="6_bwnvs"]
+
+[resource]
+script = ExtResource("6_bwnvs")
+question_info = "O que é velocidade média?"
+type = 0
+options = Array[String](["Distância/Tempo", "Força/Massa", "Energia/Tempo", "Aceleração/Tempo"])
+currect = "Distância/Tempo"
+

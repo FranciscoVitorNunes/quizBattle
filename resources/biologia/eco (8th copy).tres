@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://cyrctu8h76wco"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual das opções é um exemplo de bioma?"
+type = 0
+options = Array[String](["Camada de ozônio", "Deserto", "Fotossíntese", "Poluição"])
+currect = "Deserto"

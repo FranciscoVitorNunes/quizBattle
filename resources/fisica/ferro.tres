@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q2g6r82u2axk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual é a unidade de medida de força no SI?"
+type = 0
+options = Array[String](["Newton", "Joule", "Pascal", "Watt"])
+currect = "Newton"
+

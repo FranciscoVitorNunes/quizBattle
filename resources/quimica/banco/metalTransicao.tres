@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://q8g6r82u2hxk"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual das opções é um metal de transição?"
+type = 0
+options = Array[String](["Lítio", "Zinco", "Fósforo", "Iodo"])
+currect = "Zinco"
+

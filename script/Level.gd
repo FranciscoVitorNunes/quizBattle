@@ -6,18 +6,23 @@ const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialogoscreen.tscn")
 const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 var _dialog_data: Dictionary = {
 	0: {
-		"faceset": "res://sprites/spr_player.png",
-		"dialog": "ola, seja bem vindo",
+		"faceset": "res://sprites/professores/icons/ana.png",
+		"dialog": "Olá, também me chamo Márcia!",
 		"title": "machi",
 	},
 	1: {
-		"faceset": "res://sprites/spr_player.png",
-		"dialog": "ola, tudo bem",
+		"faceset": "res://sprites/professores/icons/ana.png",
+		"dialog": "Sou professora de física.",
 		"title": "jona",
 	},
 	2: {
-		"faceset": "res://sprites/spr_player.png",
-		"dialog": "ola, como esta",
+		"faceset": "res://sprites/professores/icons/ana.png",
+		"dialog": "já que estamos na quadra",
+		"title": "ana",
+	},
+	3: {
+		"faceset": "res://sprites/professores/icons/ana.png",
+		"dialog": "vamos testar seus conhecimentos sobre movimento",
 		"title": "ana",
 	}
 }

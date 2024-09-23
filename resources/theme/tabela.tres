@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=13 format=3 uid="uid://c0teplyomool1"]
+
+[ext_resource type="Script" path="res://script/resource/theme.gd" id="1_ei2eu"]
+[ext_resource type="Script" path="res://script/resource/question.gd" id="2_3e43j"]
+[ext_resource type="Resource" uid="uid://s4g6r82u2hxk" path="res://resources/quimica/banco/metalAlcalino.tres" id="2_8pvts"]
+[ext_resource type="Resource" uid="uid://rag6r82u2hxk" path="res://resources/quimica/banco/ferro.tres" id="3_3he4p"]
+[ext_resource type="Resource" uid="uid://q5g6r82u2hxk" path="res://resources/quimica/banco/halogenios.tres" id="4_uga0d"]
+[ext_resource type="Resource" uid="uid://q1g6r82u2hxk" path="res://resources/quimica/banco/helio.tres" id="5_3cqmm"]
+[ext_resource type="Resource" uid="uid://q6g6r82u2hxk" path="res://resources/quimica/banco/hidrogenio.tres" id="6_nsukt"]
+[ext_resource type="Resource" uid="uid://bldytkk2l8ywi" path="res://resources/quimica/banco/mercurio.tres" id="7_y7crb"]
+[ext_resource type="Resource" uid="uid://q8g6r82u2hxk" path="res://resources/quimica/banco/metalTransicao.tres" id="9_7e4j8"]
+[ext_resource type="Resource" uid="uid://q7g6r82u2hxk" path="res://resources/quimica/banco/oganesson.tres" id="10_fcjt5"]
+[ext_resource type="Resource" uid="uid://q2g6r82u2hxk" path="res://resources/quimica/banco/oxigenio.tres" id="11_gkune"]
+[ext_resource type="Resource" uid="uid://q3g6r82u2hxk" path="res://resources/quimica/banco/potassio.tres" id="12_ku3eq"]
+
+[resource]
+script = ExtResource("1_ei2eu")
+theme = Array[ExtResource("2_3e43j")]([ExtResource("3_3he4p"), ExtResource("4_uga0d"), ExtResource("5_3cqmm"), ExtResource("6_nsukt"), ExtResource("7_y7crb"), ExtResource("2_8pvts"), ExtResource("9_7e4j8"), ExtResource("10_fcjt5"), ExtResource("11_gkune"), ExtResource("12_ku3eq")])

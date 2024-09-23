@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=9 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
-[ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/quimica/theme/tabela.tres" id="2_2njhk"]
+[ext_resource type="Resource" uid="uid://dq3dhc28ri6s" path="res://resources/theme/movimento.tres" id="2_4cgrd"]
+[ext_resource type="Texture2D" uid="uid://clhcgkxcg0qo7" path="res://sprites/quiz/1727056528459.png" id="3_bo71t"]
+[ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_jjvbh"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_prqgh"]
 load_path = "res://.godot/imported/botao_normal.png-9bafeabb1a7125b02b956815c7dbc416.ctex"
@@ -17,7 +19,7 @@ load_path = "res://.godot/imported/botao_normal.png-9bafeabb1a7125b02b956815c7db
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_marxr")
-quiz = ExtResource("2_2njhk")
+quiz = ExtResource("2_4cgrd")
 color_right = Color(0, 0.978861, 0.61654, 1)
 color_wrong = Color(1, 0, 0, 1)
 
@@ -41,19 +43,31 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -160.0
-offset_right = -51.0
+offset_right = -40.0
 offset_bottom = 171.0
 grow_horizontal = 2
+
+[node name="balao" type="Sprite2D" parent="Control/VBoxContainer"]
+position = Vector2(63, 53.75)
+scale = Vector2(2.15625, 1.99219)
+texture = ExtResource("3_bo71t")
 
 [node name="Label" type="Label" parent="Control/VBoxContainer"]
 custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 15
 text = "pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Jonata" type="Sprite2D" parent="Control/VBoxContainer"]
+position = Vector2(34, 145)
+scale = Vector2(1.32812, 1.21154)
+texture = ExtResource("4_jjvbh")
+hframes = 2
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
 layout_mode = 1
@@ -74,40 +88,92 @@ texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 8
 icon = SubResource("CompressedTexture2D_prqgh")
+flat = true
+autowrap_mode = 1
 icon_alignment = 1
+
+[node name="altA" type="TextureRect" parent="Control/VBoxContainer2/Button1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.021
+anchor_bottom = 0.208
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 24.968
+offset_bottom = 20.512
+expand_mode = 1
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 7
 icon = SubResource("CompressedTexture2D_2nxsb")
+flat = true
+autowrap_mode = 1
 icon_alignment = 1
+
+[node name="altB" type="TextureRect" parent="Control/VBoxContainer2/Button2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.021
+anchor_bottom = 0.208
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 24.968
+offset_bottom = 20.512
+expand_mode = 1
 
 [node name="Button3" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 7
 icon = SubResource("CompressedTexture2D_gsub8")
+flat = true
+autowrap_mode = 1
 icon_alignment = 1
+
+[node name="altC" type="TextureRect" parent="Control/VBoxContainer2/Button3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.021
+anchor_bottom = 0.208
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 24.968
+offset_bottom = 20.512
+expand_mode = 1
 
 [node name="Button4" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 7
 icon = SubResource("CompressedTexture2D_ogep7")
+flat = true
+autowrap_mode = 1
 icon_alignment = 1
+
+[node name="altD" type="TextureRect" parent="Control/VBoxContainer2/Button4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.021
+anchor_bottom = 0.208
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 24.968
+offset_bottom = 20.512
+expand_mode = 1
 
 [node name="GameOver" type="ColorRect" parent="Control"]
 visible = false
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
-color = Color(0.52867, 0.528669, 0.528669, 1)
+color = Color(0.225264, 0.596159, 0.572804, 1)
 
 [node name="Title" type="Label" parent="Control/GameOver"]
 layout_mode = 1
@@ -143,16 +209,24 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -98.0
-offset_top = -57.0
-offset_right = 98.0
-offset_bottom = -17.0
+offset_left = -40.0
+offset_top = -49.0
+offset_right = 27.0
+offset_bottom = -18.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "Jogar novamente"
+text = "voltar"
 
 [node name="AudioCorrect" type="AudioStreamPlayer2D" parent="."]
 
 [node name="AudioErro" type="AudioListener2D" parent="."]
 
+[connection signal="focus_entered" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_entered"]
+[connection signal="focus_exited" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_exited"]
+[connection signal="focus_entered" from="Control/VBoxContainer2/Button2" to="." method="_on_button_2_focus_entered"]
+[connection signal="focus_exited" from="Control/VBoxContainer2/Button2" to="." method="_on_button_2_focus_exited"]
+[connection signal="focus_entered" from="Control/VBoxContainer2/Button3" to="." method="_on_button_3_focus_entered"]
+[connection signal="focus_exited" from="Control/VBoxContainer2/Button3" to="." method="_on_button_3_focus_exited"]
+[connection signal="focus_entered" from="Control/VBoxContainer2/Button4" to="." method="_on_button_4_focus_entered"]
+[connection signal="focus_exited" from="Control/VBoxContainer2/Button4" to="." method="_on_button_4_focus_exited"]
 [connection signal="pressed" from="Control/GameOver/Restart" to="." method="_on_restart_pressed"]
