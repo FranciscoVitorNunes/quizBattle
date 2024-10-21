@@ -6,25 +6,47 @@ const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialogoscreen.tscn")
 const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 var _dialog_data: Dictionary = {
 	0: {
-		"faceset": "res://sprites/professores/icons/Jhonatan.png",
-		"dialog": "Oi Márcia, tudo bem?",
-		"title": "machi",
+		"dialogs": [
+			{
+				"faceset": "res://sprites/professores/icons/Jhonatan.png",
+				"dialog": "Oi Márcia, tudo bem?",
+				"title": "machi",
+			},
+			{
+				"faceset": "res://sprites/professores/icons/Jhonatan.png",
+				"dialog": "Sou professora de química",
+				"title": "jona",
+			}
+		],
+		"quizzes": [
+			"res://quizzes/quiz_periodic_table.tres",  # Nível 1
+			"res://quizzes/quiz_chemical_reactions.tres"  # Nível 2
+		]
 	},
 	1: {
-		"faceset": "res://sprites/professores/icons/Jhonatan.png",
-		"dialog": "Sou professora de química",
-		"title": "jona",
-	},
-	2: {
-		"faceset": "res://sprites/professores/icons/Jhonatan.png",
-		"dialog": "O que voçê sabe sobre tabela periodica?",
-		"title": "ana",
+		"dialogs": [
+			{
+				"faceset": "res://sprites/professores/icons/Ana.png",
+				"dialog": "Olá, estudante! Pronto para um desafio de física?",
+				"title": "física",
+			},
+			{
+				"faceset": "res://sprites/professores/icons/Ana.png",
+				"dialog": "Vamos falar sobre leis de Newton.",
+				"title": "leis de Newton",
+			}
+		],
+		"quizzes": [
+			"res://quizzes/quiz_newton_laws.tres",  # Nível 1
+			"res://quizzes/quiz_energy_conservation.tres"  # Nível 2
+		]
 	}
 }
+
 @export_category("Objects")
 @export var _hud: CanvasLayer = null
 @export var spriteProf: Texture2D 
-
+@export var idProf: int
 
 func _ready() -> void:
 	$Sprite2D.texture = spriteProf
@@ -35,5 +57,6 @@ func _on_area_2d_body_entered(body):
 	var _new_dialog: DialogScreen = _DIALOG_SCREEN.instantiate()
 	_new_dialog.data = _dialog_data
 	_new_dialog.z_index = 0
+	_new_dialog._idProf=idProf
 	_hud.add_child(_new_dialog)
 	Globals.is_dialog_open = true

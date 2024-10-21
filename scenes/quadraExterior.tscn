@@ -2432,6 +2432,7 @@ position = Vector2(-242, -1238)
 [node name="ana" parent="Quadra" instance=ExtResource("6_11vve")]
 position = Vector2(125, -144)
 spriteProf = ExtResource("3_i7oiw")
+idProf = 1
 
 [node name="chao" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -2463,7 +2464,7 @@ tile_map_data = PackedByteArray("AADx/xEABQAwADMAAADx/xIABQAwADQAAADy/xEABQAxADM
 tile_set = SubResource("TileSet_ntdr5")
 
 [node name="player" parent="." instance=ExtResource("2_n06hs")]
-position = Vector2(18, -402)
+position = Vector2(-103, -1109)
 
 [node name="teto" type="TileMapLayer" parent="."]
 position = Vector2(-238, -365)

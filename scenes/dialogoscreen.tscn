@@ -116,6 +116,6 @@ offset_bottom = 39.0
 text = ">"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="NextDialog" to="." method="_on_next_dialog_pressed"]

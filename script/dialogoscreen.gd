@@ -1,13 +1,12 @@
 extends Control
 class_name DialogScreen
 
-signal dialog_opened
-signal dialog_closed
 
 
 var _steep: float = 0.5
 
 var _id: int = 0
+var _idProf: int
 
 var data: Dictionary= {}
 
@@ -18,7 +17,6 @@ const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 @export var _faceset: TextureRect = null
 
 func _ready() -> void:
-	emit_signal("dialog_opened")
 	_initialize_dialog()
 
 	
@@ -37,8 +35,8 @@ func _process(delta) -> void:
 		
 
 func _initialize_dialog() -> void:
-	_dialog.text = data[_id]["dialog"]
-	_faceset.texture = load(data[_id]["faceset"])
+	_dialog.text = data[_idProf]["dialogs"][0]["dialog"]
+	_faceset.texture = load(data[_idProf]["dialogs"][0]["faceset"])
 
 	_dialog.visible_characters =  0
 	while _dialog.visible_ratio < 1:
