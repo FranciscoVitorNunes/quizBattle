@@ -6,23 +6,18 @@ const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialogoscreen.tscn")
 const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 var _dialog_data: Dictionary = {
 	0: {
-		"faceset": "res://sprites/professores/icons/ana.png",
-		"dialog": "Olá, também me chamo Márcia!",
+		"faceset": "res://sprites/professores/icons/Jhonatan.png",
+		"dialog": "Oi Márcia, tudo bem?",
 		"title": "machi",
 	},
 	1: {
-		"faceset": "res://sprites/professores/icons/ana.png",
-		"dialog": "Sou professora de física.",
+		"faceset": "res://sprites/professores/icons/Jhonatan.png",
+		"dialog": "Sou professora de química",
 		"title": "jona",
 	},
 	2: {
-		"faceset": "res://sprites/professores/icons/ana.png",
-		"dialog": "já que estamos na quadra",
-		"title": "ana",
-	},
-	3: {
-		"faceset": "res://sprites/professores/icons/ana.png",
-		"dialog": "vamos testar seus conhecimentos sobre movimento",
+		"faceset": "res://sprites/professores/icons/Jhonatan.png",
+		"dialog": "O que voçê sabe sobre tabela periodica?",
 		"title": "ana",
 	}
 }

@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://q8g6r82o3dxk" path="res://resources/fisica/ferro (2) (7th copy).tres" id="8_ipyov"]
 [ext_resource type="Resource" uid="uid://q2g6r82u2axk" path="res://resources/fisica/ferro.tres" id="9_6hcic"]
 [ext_resource type="Resource" uid="uid://bstpf1co08ywi" path="res://resources/fisica/ferro (2) (another copy).tres" id="10_st10r"]
-[ext_resource type="Resource" uid="uid://bldytkk2l8ywi" path="res://resources/fisica/ferro (2) (copy).tres" id="11_f330j"]
+[ext_resource type="Resource" uid="uid://bldytkk2l8ywi" path="res://resources/quimica/banco/mercurio.tres" id="11_f330j"]
 [ext_resource type="Resource" uid="uid://q3g6r82u4hxk" path="res://resources/fisica/ferro (2).tres" id="12_446tj"]
 
 [resource]

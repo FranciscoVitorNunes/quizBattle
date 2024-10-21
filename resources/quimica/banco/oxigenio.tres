@@ -8,4 +8,3 @@ question_info = "Qual é o número atômico do Oxigênio?"
 type = 0
 options = Array[String](["6", "7", "8", "9"])
 currect = "8"
-

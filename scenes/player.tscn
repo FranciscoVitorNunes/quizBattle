@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://script/player.gd" id="1_tuomm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jgr0"]
-size = Vector2(12.5, 5)
+size = Vector2(29, 6.5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n0m00"]
 load_path = "res://.godot/imported/spr_player.png-5a8a0dd67c63d08652a3cb7ffacd71fe.ctex"
@@ -453,7 +453,7 @@ script = ExtResource("1_tuomm")
 _animation_tree = NodePath("AnimationTree")
 
 [node name="colisor" type="CollisionShape2D" parent="."]
-position = Vector2(-0.25, -0.5)
+position = Vector2(-1.5, 4.75)
 shape = SubResource("RectangleShape2D_8jgr0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

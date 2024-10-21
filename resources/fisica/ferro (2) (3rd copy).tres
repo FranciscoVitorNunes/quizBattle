@@ -8,4 +8,3 @@ question_info = "Qual é a primeira lei de Newton?"
 type = 0
 options = Array[String](["Inércia", "Ação e reação", "F = m*a", "Conservação de energia"])
 currect = "Inércia"
-

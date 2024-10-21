@@ -85,7 +85,7 @@ horizontal_alignment = 2
 [node name="dialog" type="RichTextLabel" parent="background/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "zbznznznsnsmnsdjsndhsjsjdbsnsjsnzjzjsjsjsjzjzjzjsjsjbxnsjdhdjdjfhfjdjfhfjdjjxbcbxdjjdbfhejfbfndnx"
+text = "conteúdo"
 scroll_active = false
 tab_size = 10
 
@@ -116,6 +116,6 @@ offset_bottom = 39.0
 text = ">"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="NextDialog" to="." method="_on_next_dialog_pressed"]

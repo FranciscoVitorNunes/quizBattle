@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=10 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
-[ext_resource type="Resource" uid="uid://dq3dhc28ri6s" path="res://resources/theme/movimento.tres" id="2_4cgrd"]
+[ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/theme/tabela.tres" id="2_5w426"]
 [ext_resource type="Texture2D" uid="uid://clhcgkxcg0qo7" path="res://sprites/quiz/1727056528459.png" id="3_bo71t"]
-[ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_jjvbh"]
+[ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_l5aie"]
+[ext_resource type="Texture2D" uid="uid://c5mh4x7jot7rq" path="res://sprites/professores/jonata.png" id="4_mh1s6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_prqgh"]
 load_path = "res://.godot/imported/botao_normal.png-9bafeabb1a7125b02b956815c7dbc416.ctex"
@@ -19,7 +20,7 @@ load_path = "res://.godot/imported/botao_normal.png-9bafeabb1a7125b02b956815c7db
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_marxr")
-quiz = ExtResource("2_4cgrd")
+quiz = ExtResource("2_5w426")
 color_right = Color(0, 0.978861, 0.61654, 1)
 color_wrong = Color(1, 0, 0, 1)
 
@@ -62,12 +63,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
-
-[node name="Jonata" type="Sprite2D" parent="Control/VBoxContainer"]
-position = Vector2(34, 145)
-scale = Vector2(1.32812, 1.21154)
-texture = ExtResource("4_jjvbh")
-hframes = 2
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
 layout_mode = 1
@@ -220,6 +215,18 @@ text = "voltar"
 [node name="AudioCorrect" type="AudioStreamPlayer2D" parent="."]
 
 [node name="AudioErro" type="AudioListener2D" parent="."]
+
+[node name="Ana" type="Sprite2D" parent="."]
+position = Vector2(-52, 105)
+scale = Vector2(1.21875, 1.21154)
+texture = ExtResource("4_l5aie")
+hframes = 2
+
+[node name="Jonata" type="Sprite2D" parent="."]
+position = Vector2(21, 145)
+scale = Vector2(1.1875, 1.21154)
+texture = ExtResource("4_mh1s6")
+hframes = 2
 
 [connection signal="focus_entered" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_entered"]
 [connection signal="focus_exited" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_exited"]
