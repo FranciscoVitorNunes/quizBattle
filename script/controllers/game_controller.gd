@@ -1,4 +1,18 @@
 extends Node
+# Adicione este código no seu script.
+# Variável para armazenar qual música está tocando atualmente
+var current_music_index: int = 0
+
+# Lista de nós de áudio
+@onready var musics = [
+	$ambiente1,
+	$ambiente2,
+	$ambiente3,
+	$ambiente4,
+	$ambiente5,
+	$ambiente6,
+	$ambiente7
+]
 
 
 @export var quiz: QuizTheme
@@ -12,7 +26,6 @@ var correct: int = 0
 @onready var label = $Control/VBoxContainer/Label
 
 func _ready():
-	
 	correct = 0 
 	for button in $Control/VBoxContainer2.get_children():
 		buttons.append(button)
@@ -40,9 +53,10 @@ func _button_answer(button) -> void:
 	if quiz.theme[index].currect == button.text:
 		button.modulate = color_right
 		correct += 1
+		$acerto.play()
 	else:
 		button.modulate = color_wrong
-	
+		$erro.play()
 	_next_question()
 
 func _next_question() -> void:
@@ -66,6 +80,7 @@ func _random_array(array: Array) -> Array:
 func _game_over() -> void:
 	$Control/GameOver.show()
 	$Control/GameOver/Score.text = str(correct, "/", quiz.theme.size())
+	$quiz_termino.play()
 
 
 func _on_restart_pressed():
@@ -94,3 +109,17 @@ func _on_button_4_focus_entered() -> void:
 
 func _on_button_4_focus_exited() -> void:
 	$Control/VBoxContainer2/Button4/altD.texture= null
+
+
+# Função chamada quando o botão é pressionado
+func _on_alterar_musica_pressed() -> void:
+	# Parar a música atual
+	musics[current_music_index].stop()
+	
+	# Atualizar o índice da música atual, ciclando pelos 7 áudios
+	current_music_index += 1
+	if current_music_index >= musics.size():
+		current_music_index = 0
+	
+	# Tocar a nova música
+	musics[current_music_index].play()
