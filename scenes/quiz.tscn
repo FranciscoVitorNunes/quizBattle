@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=22 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
 [ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/theme/tabela.tres" id="2_5w426"]
@@ -13,10 +13,11 @@
 [ext_resource type="AudioStream" uid="uid://ci2v44bg600xx" path="res://sons/ambiente_animado.mp3" id="11_i4rlp"]
 [ext_resource type="AudioStream" uid="uid://bahuhyn554jrh" path="res://sons/ambiente_tenso.mp3" id="12_cakal"]
 [ext_resource type="AudioStream" uid="uid://cktrwnf6iqlwm" path="res://sons/ambiente_toque.mp3" id="13_142vy"]
-[ext_resource type="Texture2D" uid="uid://b7mk4tn4p6gha" path="res://sprites/ui/ui_normal.png" id="14_m0q1i"]
 [ext_resource type="AudioStream" uid="uid://bgv0ud5a667vl" path="res://sons/erro.mp3" id="15_mco8q"]
 [ext_resource type="AudioStream" uid="uid://nww35wip4w1n" path="res://sons/acerto.mp3" id="16_c75q6"]
+[ext_resource type="Texture2D" uid="uid://crgy3bxn1i2ca" path="res://sprites/ui/switch_music.png" id="17_br0wx"]
 [ext_resource type="AudioStream" uid="uid://bxd8waskf3kl8" path="res://sons/quiz_termino.mp3" id="17_vi1ho"]
+[ext_resource type="Texture2D" uid="uid://7inv1imten2k" path="res://sprites/ui/switch_music_down.png" id="18_n8f0f"]
 
 [sub_resource type="Animation" id="Animation_ksx2a"]
 length = 0.001
@@ -289,14 +290,6 @@ stream = ExtResource("12_cakal")
 [node name="ambiente7" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("13_142vy")
 
-[node name="AlterarMusica" type="Button" parent="."]
-offset_left = 285.0
-offset_top = -4.0
-offset_right = 325.0
-offset_bottom = 36.0
-icon = ExtResource("14_m0q1i")
-flat = true
-
 [node name="erro" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_mco8q")
 
@@ -311,6 +304,12 @@ libraries = {
 "": SubResource("AnimationLibrary_00an3")
 }
 
+[node name="alterarMusica" type="TouchScreenButton" parent="."]
+position = Vector2(303, 1)
+scale = Vector2(0.666667, 0.666667)
+texture_normal = ExtResource("17_br0wx")
+texture_pressed = ExtResource("18_n8f0f")
+
 [connection signal="focus_entered" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_entered"]
 [connection signal="focus_exited" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_exited"]
 [connection signal="focus_entered" from="Control/VBoxContainer2/Button2" to="." method="_on_button_2_focus_entered"]
@@ -320,4 +319,4 @@ libraries = {
 [connection signal="focus_entered" from="Control/VBoxContainer2/Button4" to="." method="_on_button_4_focus_entered"]
 [connection signal="focus_exited" from="Control/VBoxContainer2/Button4" to="." method="_on_button_4_focus_exited"]
 [connection signal="pressed" from="Control/GameOver/Restart" to="." method="_on_restart_pressed"]
-[connection signal="pressed" from="AlterarMusica" to="." method="_on_alterar_musica_pressed"]
+[connection signal="pressed" from="alterarMusica" to="." method="_on_alterar_musica_pressed"]
