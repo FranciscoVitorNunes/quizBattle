@@ -26,12 +26,12 @@ var _dialog_data: Dictionary = {
 	1: {
 		"dialogs": [
 			{
-				"faceset": "res://sprites/professores/icons/Ana.png",
+				"faceset": "res://sprites/professores/icons/ana.png",
 				"dialog": "Olá, estudante! Pronto para um desafio de física?",
 				"title": "física",
 			},
 			{
-				"faceset": "res://sprites/professores/icons/Ana.png",
+				"faceset": "res://sprites/professores/icons/ana.png",
 				"dialog": "Vamos falar sobre leis de Newton.",
 				"title": "leis de Newton",
 			}
