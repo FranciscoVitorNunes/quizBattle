@@ -53,7 +53,7 @@ func _ready() -> void:
 
 
 
-func _on_area_2d_body_entered(body):
+func _on_area_2d_body_entered(body) -> void:
 	var _new_dialog: DialogScreen = _DIALOG_SCREEN.instantiate()
 	_new_dialog.data = _dialog_data
 	_new_dialog.z_index = 0
