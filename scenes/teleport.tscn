@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfkuk540f5i82"]
+[gd_scene load_steps=4 format=3 uid="uid://dfkuk540f5i82"]
 
 [ext_resource type="Script" path="res://script/Teleport.gd" id="1_6go6v"]
+[ext_resource type="Texture2D" uid="uid://78dhym4g0sh3" path="res://sprites/ui/porta.png" id="2_ggkc0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jrjx"]
 size = Vector2(33, 34)
@@ -11,4 +12,15 @@ script = ExtResource("1_6go6v")
 [node name="ColisorTeleport" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1jrjx")
 
+[node name="interagir" type="Button" parent="."]
+visible = false
+offset_left = -20.0
+offset_top = -61.0
+offset_right = 20.0
+offset_bottom = -21.0
+size_flags_horizontal = 4
+icon = ExtResource("2_ggkc0")
+flat = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="pressed" from="interagir" to="." method="_on_interagir_pressed"]

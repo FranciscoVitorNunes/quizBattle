@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
 [ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/theme/tabela.tres" id="2_5w426"]
-[ext_resource type="Texture2D" uid="uid://clhcgkxcg0qo7" path="res://sprites/quiz/1727056528459.png" id="3_bo71t"]
+[ext_resource type="Texture2D" uid="uid://taxc8t5qdguh" path="res://sprites/quiz/balao.png" id="3_te7py"]
 [ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_l5aie"]
 [ext_resource type="Texture2D" uid="uid://c5mh4x7jot7rq" path="res://sprites/professores/jonata.png" id="4_mh1s6"]
 [ext_resource type="Texture2D" uid="uid://bi45k5opklw02" path="res://sprites/quiz/botao_neutro.png" id="4_xrmcr"]
@@ -17,6 +17,21 @@
 [ext_resource type="AudioStream" uid="uid://bgv0ud5a667vl" path="res://sons/erro.mp3" id="15_mco8q"]
 [ext_resource type="AudioStream" uid="uid://nww35wip4w1n" path="res://sons/acerto.mp3" id="16_c75q6"]
 [ext_resource type="AudioStream" uid="uid://bxd8waskf3kl8" path="res://sons/quiz_termino.mp3" id="17_vi1ho"]
+
+[sub_resource type="Animation" id="Animation_ksx2a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jonata:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_8h230"]
 resource_name = "prof"
@@ -34,21 +49,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
-}
-
-[sub_resource type="Animation" id="Animation_ksx2a"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Jonata:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_00an3"]
@@ -79,24 +79,25 @@ color = Color(0.521569, 0.65098, 0.717647, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -160.0
-offset_right = -40.0
-offset_bottom = 171.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -194.0
+offset_bottom = -100.0
 grow_horizontal = 2
+grow_vertical = 2
 
 [node name="balao" type="Sprite2D" parent="Control/VBoxContainer"]
-position = Vector2(63, 53.75)
-scale = Vector2(2.15625, 1.99219)
-texture = ExtResource("3_bo71t")
+position = Vector2(63, 68.125)
+scale = Vector2(2.15625, 2.27735)
+texture = ExtResource("3_te7py")
 
 [node name="Label" type="Label" parent="Control/VBoxContainer"]
 custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 8
 text = "pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
