@@ -26,6 +26,9 @@ var correct: int = 0
 @onready var label = $Control/VBoxContainer/Label
 
 func _ready():
+	
+	$aniprof.play("prof")
+	
 	correct = 0 
 	for button in $Control/VBoxContainer2.get_children():
 		buttons.append(button)
@@ -35,19 +38,35 @@ func _ready():
 	
 	load_quiz()
 
+# Controla a velocidade com que os caracteres surgem
+var text_speed: float = 0.05  # Menor valor = mais rápido
+
+
 func load_quiz() -> void:
 	if index >= quiz.theme.size():
 		_game_over()
 		return
-		
+
+	# Reseta o número de caracteres visíveis para 0
+	label.visible_characters = 0
+
+	# Define o texto da pergunta
 	label.text = quiz.theme[index].question_info
-	
-	var opitions =  _random_array(quiz.theme[index].options)
-	
+
+	# Inicia a animação do texto surgindo gradualmente
+	_animate_text(label)
+
+	var options = _random_array(quiz.theme[index].options)
 
 	for i in buttons.size():
-		buttons[i].text = opitions[i]
+		buttons[i].text = options[i]
 		buttons[i].pressed.connect(_button_answer.bind(buttons[i]))
+
+func _animate_text(label: Label) -> void:
+	# Gradualmente mostra o texto do label
+	while label.visible_characters < label.text.length():
+		await get_tree().create_timer(text_speed).timeout
+		label.visible_characters += 1
 		
 func _button_answer(button) -> void:
 	if quiz.theme[index].currect == button.text:

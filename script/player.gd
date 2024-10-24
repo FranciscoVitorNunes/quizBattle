@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+
+
 var _state_machine
 
 @export_category("Variables")

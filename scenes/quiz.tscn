@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=21 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
 [ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/theme/tabela.tres" id="2_5w426"]
@@ -17,6 +17,45 @@
 [ext_resource type="AudioStream" uid="uid://bgv0ud5a667vl" path="res://sons/erro.mp3" id="15_mco8q"]
 [ext_resource type="AudioStream" uid="uid://nww35wip4w1n" path="res://sons/acerto.mp3" id="16_c75q6"]
 [ext_resource type="AudioStream" uid="uid://bxd8waskf3kl8" path="res://sons/quiz_termino.mp3" id="17_vi1ho"]
+
+[sub_resource type="Animation" id="Animation_8h230"]
+resource_name = "prof"
+length = 1.20002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jonata:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_ksx2a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jonata:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_00an3"]
+_data = {
+"RESET": SubResource("Animation_ksx2a"),
+"prof": SubResource("Animation_8h230")
+}
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_marxr")
@@ -265,6 +304,11 @@ stream = ExtResource("16_c75q6")
 
 [node name="quiz_termino" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_vi1ho")
+
+[node name="aniprof" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_00an3")
+}
 
 [connection signal="focus_entered" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_entered"]
 [connection signal="focus_exited" from="Control/VBoxContainer2/Button1" to="." method="_on_button_1_focus_exited"]
