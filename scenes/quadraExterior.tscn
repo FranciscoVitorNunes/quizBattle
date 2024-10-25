@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://irwpowdscueq"]
+[gd_scene load_steps=28 format=4 uid="uid://irwpowdscueq"]
 
 [ext_resource type="Script" path="res://script/quadra_exterior.gd" id="1_3h401"]
 [ext_resource type="Texture2D" uid="uid://b7mk4tn4p6bhp" path="res://sprites/tilemap/tile.png" id="1_f4d1i"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://dfkuk540f5i82" path="res://scenes/teleport.tscn" id="8_7l0qi"]
 [ext_resource type="Texture2D" uid="uid://dw3g02hx6ku63" path="res://sprites/professores/machi.png" id="9_a0l0p"]
 [ext_resource type="PackedScene" uid="uid://b0h1qxet75rpw" path="res://scenes/quadra.tscn" id="10_0vuj1"]
-[ext_resource type="PackedScene" uid="uid://ch46dd2tx3evo" path="res://scenes/mobile_controll.tscn" id="13_ilmri"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aw84o"]
 resource_name = "paredes"
@@ -2634,6 +2633,3 @@ shape = SubResource("RectangleShape2D_juscy")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="quadra2"]
 position = Vector2(-549, -1245)
 shape = SubResource("RectangleShape2D_juscy")
-
-[node name="MobileControll" parent="." instance=ExtResource("13_ilmri")]
-visible = false

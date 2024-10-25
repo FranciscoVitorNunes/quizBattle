@@ -6,57 +6,66 @@ const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialogoscreen.tscn")
 const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 var _dialog_data: Dictionary = {
 	0: {
+		"faceset": [
+			{
+			"faceset": "res://sprites/professores/icons/Jhonatan.png"
+			}
+		],
 		"dialogs": [
 			{
-				"faceset": "res://sprites/professores/icons/Jhonatan.png",
-				"dialog": "Oi Márcia, tudo bem?",
-				"title": "machi",
+				1: "Oi Márcia, tudo bem?",
+				2: "Sou professora de química",
 			},
 			{
-				"faceset": "res://sprites/professores/icons/Jhonatan.png",
-				"dialog": "Sou professora de química",
-				"title": "jona",
+				1: "Que bom te ver de vouta!",
+				2: "Vamos ver se é boa em assuntos de radioatividade",
 			}
 		],
 		"quizzes": [
-			"res://quizzes/quiz_periodic_table.tres",  # Nível 1
-			"res://quizzes/quiz_chemical_reactions.tres"  # Nível 2
+			"res://resources/theme/tabela.tres",  # Nível 1
+			"res://resources/theme/tabela.tres"  # Nível 2
 		]
 	},
 	1: {
+		"faceset": [
+			{
+			"faceset": "res://sprites/professores/icons/ana.png"
+			}
+		],
 		"dialogs": [
 			{
-				"faceset": "res://sprites/professores/icons/ana.png",
-				"dialog": "Olá, estudante! Pronto para um desafio de física?",
-				"title": "física",
+				1: "Olá, estudante! me chamo Ana Márcia!",
+				2: "Olá, estudante! Pronto para um desafio de física?",
 			},
 			{
-				"faceset": "res://sprites/professores/icons/ana.png",
-				"dialog": "Vamos falar sobre leis de Newton.",
-				"title": "leis de Newton",
+				1: "Olá novamente!",
+				2: "Pronto para um desafio de termologia?",
 			}
 		],
 		"quizzes": [
-			"res://quizzes/quiz_newton_laws.tres",  # Nível 1
-			"res://quizzes/quiz_energy_conservation.tres"  # Nível 2
+			"res://resources/theme/movimento.tres",  # Nível 1
+			"res://resources/theme/movimento.tres"  # Nível 2
 		]
 	},
 	3: {
+		"faceset": [
+			{
+			"faceset": "res://sprites/professores/icons/machi.png"
+			}
+		],
 	"dialogs": [
 		{
-			"faceset": "res://sprites/professores/icons/machi.png",
-			"dialog": "Olá, estudante! Pronto para um desafio de biologia?",
-			"title": "biologia",
+			1: "Olá, estudante! me chamo Ana Márcia!",
+			2: "Olá, estudante! Pronto para um desafio de física?",
 		},
 		{
-			"faceset": "res://sprites/professores/icons/machi.png",
-			"dialog": "Vamos falar sobre ecologia.",
-			"title": "ecologia",
+			1: "Olá novamente!",
+			2: "Pronto para um desafio de termologia?",
 		}
 	],
 	"quizzes": [
-		"res://quizzes/quiz_newton_laws.tres",  # Nível 1
-		"res://quizzes/quiz_energy_conservation.tres"  # Nível 2
+		"res://resources/theme/ecologia.tres",  # Nível 1
+		"res://resources/theme/ecologia.tres"  # Nível 2
 	]
 }
 }
