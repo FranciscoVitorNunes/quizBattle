@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=21 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
-[ext_resource type="Resource" uid="uid://c0teplyomool1" path="res://resources/theme/tabela.tres" id="2_5w426"]
 [ext_resource type="Texture2D" uid="uid://taxc8t5qdguh" path="res://sprites/quiz/balao.png" id="3_te7py"]
 [ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_l5aie"]
 [ext_resource type="Texture2D" uid="uid://c5mh4x7jot7rq" path="res://sprites/professores/jonata.png" id="4_mh1s6"]
@@ -60,7 +59,6 @@ _data = {
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_marxr")
-quiz = ExtResource("2_5w426")
 color_right = Color(0, 0.978861, 0.61654, 1)
 color_wrong = Color(1, 0, 0, 1)
 
@@ -123,8 +121,10 @@ grow_vertical = 0
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 8
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 6
+text = "testssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
 icon = ExtResource("4_xrmcr")
 flat = true
 autowrap_mode = 1
@@ -144,8 +144,10 @@ expand_mode = 1
 [node name="Button2" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 7
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 6
+text = "testssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
 icon = ExtResource("4_xrmcr")
 flat = true
 autowrap_mode = 1
@@ -165,8 +167,10 @@ expand_mode = 1
 [node name="Button3" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 7
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 6
+text = "testssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
 icon = ExtResource("4_xrmcr")
 flat = true
 autowrap_mode = 1
@@ -186,8 +190,10 @@ expand_mode = 1
 [node name="Button4" type="Button" parent="Control/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 7
+theme_override_colors/font_outline_color = Color(0.137255, 0.137255, 0.137255, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 6
+text = "testssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
 icon = ExtResource("4_xrmcr")
 flat = true
 autowrap_mode = 1

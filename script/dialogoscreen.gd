@@ -46,7 +46,9 @@ func _initialize_dialog() -> void:
 
 func _on_button_pressed():
 	var _new_quiz: CanvasLayer = _QUIZ.instantiate()
+	_new_quiz.quiz = ResourceLoader.load("res://resources/theme/ecologia.tres")
 	$".".add_child(_new_quiz)
+
 
 
 func _on_next_dialog_pressed():

@@ -40,7 +40,25 @@ var _dialog_data: Dictionary = {
 			"res://quizzes/quiz_newton_laws.tres",  # Nível 1
 			"res://quizzes/quiz_energy_conservation.tres"  # Nível 2
 		]
-	}
+	},
+	3: {
+	"dialogs": [
+		{
+			"faceset": "res://sprites/professores/icons/machi.png",
+			"dialog": "Olá, estudante! Pronto para um desafio de biologia?",
+			"title": "biologia",
+		},
+		{
+			"faceset": "res://sprites/professores/icons/machi.png",
+			"dialog": "Vamos falar sobre ecologia.",
+			"title": "ecologia",
+		}
+	],
+	"quizzes": [
+		"res://quizzes/quiz_newton_laws.tres",  # Nível 1
+		"res://quizzes/quiz_energy_conservation.tres"  # Nível 2
+	]
+}
 }
 
 @export_category("Objects")
