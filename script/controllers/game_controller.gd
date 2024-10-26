@@ -2,7 +2,7 @@ extends Node
 # Adicione este código no seu script.
 # Variável para armazenar qual música está tocando atualmente
 var current_music_index: int = 0
-
+var _idProf: int 
 # Lista de nós de áudio
 @onready var musics = [
 	$ambiente1,
@@ -22,13 +22,13 @@ var current_music_index: int = 0
 var buttons: Array[Button]
 var index: int = 0
 var correct: int = 0
-
+var spriteProf
 @onready var label = $Control/VBoxContainer/Label
 
 func _ready():
-	
+	$ambiente1.play()
 	$aniprof.play("prof")
-	
+
 	correct = 0 
 	for button in $Control/VBoxContainer2.get_children():
 		buttons.append(button)
@@ -97,9 +97,24 @@ func _random_array(array: Array) -> Array:
 	return array_temp
 
 func _game_over() -> void:
-	$Control/GameOver.show()
-	$Control/GameOver/Score.text = str(correct, "/", quiz.theme.size())
-	$quiz_termino.play()
+	if correct>=6:
+		$Control/GameOver.show()
+		$Control/GameOver/Score.text = str(correct, "/", quiz.theme.size())
+		$quiz_termino.play()
+		Globals.dialog_progress[_idProf] += 1
+	else:
+		$Control/GameOver2.show()
+		$Control/GameOver2/Score.text = str(correct, "/", quiz.theme.size())
+		
+		
+
+
+func _on_refazer_pressed() -> void:
+	# Reinicializa o quiz
+	correct = 0
+	index = 0
+	$Control/GameOver2.hide()  # Esconde a tela de Game Over
+	load_quiz()
 
 
 func _on_restart_pressed():

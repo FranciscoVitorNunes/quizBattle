@@ -6,6 +6,11 @@ const _DIALOG_SCREEN: PackedScene = preload("res://scenes/dialogoscreen.tscn")
 const _QUIZ: PackedScene = preload("res://scenes/quiz.tscn")
 var _dialog_data: Dictionary = {
 	0: {
+		"texture": [
+			{
+				"path": "res://sprites/professores/jonata.png"
+			}
+		],
 		"faceset": [
 			{
 			"faceset": "res://sprites/professores/icons/Jhonatan.png"
@@ -27,6 +32,11 @@ var _dialog_data: Dictionary = {
 		]
 	},
 	1: {
+		"texture": [
+			{
+				"path": "res://sprites/professores/ana.png"
+			}
+		],
 		"faceset": [
 			{
 			"faceset": "res://sprites/professores/icons/ana.png"
@@ -48,9 +58,15 @@ var _dialog_data: Dictionary = {
 		]
 	},
 	3: {
+		"texture": [
+			{
+				"path": "res://sprites/professores/machi.png"
+			}
+		],
 		"faceset": [
 			{
-			"faceset": "res://sprites/professores/icons/machi.png"
+			"faceset": "res://sprites/professores/icons/machi.png",
+			"path": "res://sprites/professores/machi.png"
 			}
 		],
 	"dialogs": [
@@ -81,9 +97,11 @@ func _ready() -> void:
 
 
 func _on_area_2d_body_entered(body) -> void:
-	var _new_dialog: DialogScreen = _DIALOG_SCREEN.instantiate()
-	_new_dialog.data = _dialog_data
-	_new_dialog.z_index = 0
-	_new_dialog._idProf=idProf
-	_hud.add_child(_new_dialog)
-	Globals.is_dialog_open = true
+	if body is Player:
+		var _new_dialog: DialogScreen = _DIALOG_SCREEN.instantiate()
+		_new_dialog.data = _dialog_data
+		_new_dialog.z_index = 0
+		_new_dialog._idProf=idProf
+		_hud.add_child(_new_dialog)
+		Globals.is_dialog_open = true
+	

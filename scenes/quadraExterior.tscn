@@ -2488,7 +2488,7 @@ tile_map_data = PackedByteArray("AADx/xEABQAwADMAAADx/xIABQAwADQAAADy/xEABQAxADM
 tile_set = SubResource("TileSet_ntdr5")
 
 [node name="player" parent="." instance=ExtResource("2_n06hs")]
-position = Vector2(508, -162)
+position = Vector2(-827, 451)
 
 [node name="teto" type="TileMapLayer" parent="."]
 position = Vector2(-238, -365)
@@ -2633,3 +2633,5 @@ shape = SubResource("RectangleShape2D_juscy")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="quadra2"]
 position = Vector2(-549, -1245)
 shape = SubResource("RectangleShape2D_juscy")
+
+[connection signal="body_exited" from="quadraExterna" to="." method="_on_quadra_externa_body_exited"]

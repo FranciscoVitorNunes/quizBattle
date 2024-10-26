@@ -14,13 +14,15 @@ shape = SubResource("RectangleShape2D_1jrjx")
 
 [node name="interagir" type="Button" parent="."]
 visible = false
-offset_left = -20.0
-offset_top = -61.0
-offset_right = 20.0
-offset_bottom = -21.0
+offset_left = 20.0
+offset_top = -18.0
+offset_right = 60.0
+offset_bottom = 22.0
+scale = Vector2(0.3, 0.3)
 size_flags_horizontal = 4
 icon = ExtResource("2_ggkc0")
 flat = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
 [connection signal="pressed" from="interagir" to="." method="_on_interagir_pressed"]
