@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://c6513030-85e5-4048-956c-bfe1d6e74446"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual elemento tem símbolo O?"
+type = 0
+options = Array[String](["Hidrogênio", "Oxigênio", "Ouro", "Nitrogênio"])
+currect = "Oxigênio"

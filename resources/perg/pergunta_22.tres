@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://d211bf4c-ec10-4594-8c21-072a90eff543"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Onde se localiza o núcleo do átomo?"
+type = 0
+options = Array[String](["Nas bordas", "No centro", "Nos elétrons", "No espaço vazio"])
+currect = "No centro"

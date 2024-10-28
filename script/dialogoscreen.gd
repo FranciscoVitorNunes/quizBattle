@@ -73,6 +73,7 @@ func _on_next_dialog_pressed():
 			var transition: CanvasLayer = transition_instance.instantiate()
 			$".".add_child(transition)
 			await get_tree().create_timer(1).timeout
+			Globals.quiz_open=true
 			var _new_quiz: CanvasLayer = _QUIZ.instantiate()
 			_new_quiz._idProf=_idProf
 			_new_quiz.quiz = ResourceLoader.load(data[_idProf]["quizzes"][Globals.dialog_progress[_idProf]])

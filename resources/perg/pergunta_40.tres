@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://08abd488-c2f7-4d4c-b76a-7cd4a676a121"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A energia é medida em:"
+type = 0
+options = Array[String](["Joules", "Quilogramas", "Metros", "Newton"])
+currect = "Joules"

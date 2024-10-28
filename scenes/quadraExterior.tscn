@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://irwpowdscueq"]
+[gd_scene load_steps=33 format=4 uid="uid://irwpowdscueq"]
 
 [ext_resource type="Script" path="res://script/quadra_exterior.gd" id="1_3h401"]
 [ext_resource type="Texture2D" uid="uid://b7mk4tn4p6bhp" path="res://sprites/tilemap/tile.png" id="1_f4d1i"]
@@ -13,6 +13,11 @@
 [ext_resource type="PackedScene" uid="uid://dfkuk540f5i82" path="res://scenes/teleport.tscn" id="8_7l0qi"]
 [ext_resource type="Texture2D" uid="uid://dw3g02hx6ku63" path="res://sprites/professores/machi.png" id="9_a0l0p"]
 [ext_resource type="PackedScene" uid="uid://b0h1qxet75rpw" path="res://scenes/quadra.tscn" id="10_0vuj1"]
+[ext_resource type="Texture2D" uid="uid://crgy3bxn1i2ca" path="res://sprites/ui/switch_music.png" id="14_xxhfc"]
+[ext_resource type="Texture2D" uid="uid://7inv1imten2k" path="res://sprites/ui/switch_music_down.png" id="15_x26qg"]
+[ext_resource type="AudioStream" uid="uid://ca3a27h6mhd1l" path="res://sons/ambiente2.mp3" id="16_xji2y"]
+[ext_resource type="AudioStream" uid="uid://gjxryd3owj24" path="res://sons/ambiente_aecustico.mp3" id="17_3l62b"]
+[ext_resource type="AudioStream" uid="uid://c8l5w7704pmhd" path="res://sons/cottagecore-17463.mp3" id="18_1j0v6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aw84o"]
 resource_name = "paredes"
@@ -2634,4 +2639,22 @@ shape = SubResource("RectangleShape2D_juscy")
 position = Vector2(-549, -1245)
 shape = SubResource("RectangleShape2D_juscy")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="alterarMusica" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(303, 1)
+scale = Vector2(0.666667, 0.666667)
+texture_normal = ExtResource("14_xxhfc")
+texture_pressed = ExtResource("15_x26qg")
+
+[node name="ambiente1" type="AudioStreamPlayer2D" parent="CanvasLayer/alterarMusica"]
+stream = ExtResource("16_xji2y")
+
+[node name="ambiente2" type="AudioStreamPlayer2D" parent="CanvasLayer/alterarMusica"]
+stream = ExtResource("17_3l62b")
+
+[node name="ambiente3" type="AudioStreamPlayer2D" parent="CanvasLayer/alterarMusica"]
+stream = ExtResource("18_1j0v6")
+
 [connection signal="body_exited" from="quadraExterna" to="." method="_on_quadra_externa_body_exited"]
+[connection signal="pressed" from="CanvasLayer/alterarMusica" to="." method="_on_alterar_musica_pressed"]

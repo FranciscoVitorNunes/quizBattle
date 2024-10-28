@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=13 format=3 uid="uid://bans02o3nf4bg"]
+
+[ext_resource type="Script" path="res://script/resource/theme.gd" id="1_04hd3"]
+[ext_resource type="Script" path="res://script/resource/question.gd" id="2_m7wd5"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_16.tres" id="3_53ll1"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_17.tres" id="4_ts4dh"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_18.tres" id="5_2dmul"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_19.tres" id="6_fjgao"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_20.tres" id="7_xb56h"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_21.tres" id="8_jq6pj"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_22.tres" id="9_3rhme"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_8.tres" id="10_bfnav"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_23.tres" id="11_dbmov"]
+[ext_resource type="Resource" path="res://resources/perg/pergunta_24.tres" id="12_2p5lq"]
+
+[resource]
+script = ExtResource("1_04hd3")
+theme = Array[ExtResource("2_m7wd5")]([ExtResource("3_53ll1"), ExtResource("4_ts4dh"), ExtResource("5_2dmul"), ExtResource("6_fjgao"), ExtResource("7_xb56h"), ExtResource("8_jq6pj"), ExtResource("9_3rhme"), ExtResource("10_bfnav"), ExtResource("11_dbmov"), ExtResource("12_2p5lq")])

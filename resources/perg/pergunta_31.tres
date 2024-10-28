@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://8192d296-ae78-46e7-aee3-a8092a82ab32"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A matéria ocupa:"
+type = 0
+options = Array[String](["Somente líquidos", "Espaço e possui massa", "Apenas o vácuo", "Nenhum espaço"])
+currect = "Espaço e possui massa"

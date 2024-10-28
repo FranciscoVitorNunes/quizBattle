@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://68228752-2cf0-46d7-ad3c-87c5ec781f41"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A matéria é formada por:"
+type = 0
+options = Array[String](["Átomos e moléculas", "Somente líquidos", "Partículas sem massa", "Eletricidade"])
+currect = "Átomos e moléculas"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://c55r8nwc1yv0w"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_ami7h"]
+
+[resource]
+script = ExtResource("1_ami7h")
+question_info = "Qual é uma característica comum a todos os seres vivos?"
+type = 0
+options = Array[String](["Movimento constante", "Reprodução", " Fixação ao solo", " Ausência de célula"])
+currect = ""

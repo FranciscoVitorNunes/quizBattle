@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://4d2f7877-703d-42df-9c77-e22c282b8ef7"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Quem organizou a primeira tabela periódica?"
+type = 0
+options = Array[String](["Rutherford", "Thomson", "Mendeleev", "Curie"])
+currect = "Mendeleev"

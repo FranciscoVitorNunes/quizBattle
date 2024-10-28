@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://5dbe2059-54a5-47e2-84dd-d9ff3ccd3dc4"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "O MRUV tem:"
+type = 0
+options = Array[String](["Aceleração constante", "Velocidade constante", "Força constante", "Peso constante"])
+currect = "Aceleração constante"

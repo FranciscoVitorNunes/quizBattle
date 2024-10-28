@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://34276b15-7999-45dc-bcbb-56a2472f6df7"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A aceleração mede:"
+type = 0
+options = Array[String](["Mudança na velocidade", "Força aplicada", "Energia gasta", "Tempo total"])
+currect = "Mudança na velocidade"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://02f42379-7cee-4d0f-a13f-8663673f5c47"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual grandeza é medida em quilogramas?"
+type = 0
+options = Array[String](["Tempo", "Massa", "Velocidade", "Energia"])
+currect = "Massa"

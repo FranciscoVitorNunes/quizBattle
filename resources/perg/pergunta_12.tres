@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://aef9427f-d87d-4a11-ae42-5d5b4e21d15c"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Quem controla as atividades celulares?"
+type = 0
+options = Array[String](["Mitocôndrias", "Núcleo", "Ribossomos", "Membrana"])
+currect = "Núcleo"

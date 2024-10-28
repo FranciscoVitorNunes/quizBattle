@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://d5a95c63-8863-4807-a3b8-be631a2abbd1"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A abiogênese afirma que:"
+type = 0
+options = Array[String](["A vida veio do espaço", "Seres vivos surgem de matéria não viva", "A vida sempre existiu", "A vida é formada por átomos"])
+currect = "Seres vivos surgem de matéria não viva"

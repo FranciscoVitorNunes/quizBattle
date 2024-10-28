@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://b2a0fa37-3632-472c-a737-24523ff63188"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A matéria pode existir como:"
+type = 0
+options = Array[String](["Vácuo", "Energias", "Sólido", " líquido"])
+currect = " gasoso"

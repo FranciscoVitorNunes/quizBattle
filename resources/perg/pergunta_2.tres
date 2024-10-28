@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://dbe89a16-8785-4481-ba5a-f39aadb48cff"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Como os seres vivos respondem ao ambiente?"
+type = 0
+options = Array[String](["Reação e adaptação", "Não interagem", "Ficam imóveis", "Transformam-se em minerais"])
+currect = "Reação e adaptação"

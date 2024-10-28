@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://8ae1f78e-f739-480d-b00a-caed45817f92"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual é uma propriedade da matéria?"
+type = 0
+options = Array[String](["Flexibilidade", "Ocupa espaço", "Volatilidade", "Compressão"])
+currect = "Ocupa espaço"

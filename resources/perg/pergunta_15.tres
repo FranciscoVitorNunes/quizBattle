@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://d0e03500-d268-4a13-a8e9-d343f078e33f"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A membrana plasmática é responsável por:"
+type = 0
+options = Array[String](["Proteger o núcleo", "Separar a célula do ambiente externo", "Produzir DNA", "Destruir substâncias tóxicas"])
+currect = "Separar a célula do ambiente externo"

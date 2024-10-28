@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://00ac97a0-ffbe-4d27-afbb-abe3ed2c27fb"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "O metro é unidade de:"
+type = 0
+options = Array[String](["Massa", "Tempo", "Comprimento", "Força"])
+currect = "Comprimento"

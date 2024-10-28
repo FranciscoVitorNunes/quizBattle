@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://0b163de3-bb85-44bc-9aaa-c9293cd4e42d"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual grandeza é expressa em litros?"
+type = 0
+options = Array[String](["Tempo", "Volume", "Massa", "Velocidade"])
+currect = "Volume"

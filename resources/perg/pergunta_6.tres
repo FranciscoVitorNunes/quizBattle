@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://b15a47da-e6e5-455f-bba2-0fac25b00f32"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual teoria sugere que a vida veio do espaço?"
+type = 0
+options = Array[String](["Abiogênese", "Biogênese", "Panspermia", "Lamarckismo"])
+currect = "Panspermia"

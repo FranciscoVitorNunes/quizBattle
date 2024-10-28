@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://436d5c0f-6dae-4a2d-bc66-1e769933e8a5"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual cientista desmentiu a abiogênese?"
+type = 0
+options = Array[String](["Pasteur", "Newton", "Lamarck", "Darwin"])
+currect = "Pasteur"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://633409ff-6677-4503-a4ab-fbae7abc2296"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A estrutura básica das células é composta por:"
+type = 0
+options = Array[String](["Núcleo e citoplasma", "Somente DNA", "Fibras nervosas", "Ossos e músculos"])
+currect = "Núcleo e citoplasma"

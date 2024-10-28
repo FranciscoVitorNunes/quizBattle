@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://95620edb-6122-40d9-88c0-425121657d9c"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Como os seres vivos utilizam energia?"
+type = 0
+options = Array[String](["Apenas durante o sono", "Somente ao se reproduzirem", "Para todas as suas funções vitais", "Não utilizam energia"])
+currect = "Para todas as suas funções vitais"

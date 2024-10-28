@@ -27,7 +27,15 @@ var spriteProf
 
 func _ready():
 	$ambiente1.play()
-	$aniprof.play("prof")
+	if _idProf == 0:
+		$Jonata.visible=true
+		$aniprof.play("prof")
+	if _idProf == 1:
+		$Ana.visible=true
+		$aniprof.play("ana")
+	if _idProf == 3:
+		$machi.visible=true
+		$aniprof.play("machi")
 
 	correct = 0 
 	for button in $Control/VBoxContainer2.get_children():
@@ -145,7 +153,6 @@ func _on_button_4_focus_exited() -> void:
 	$Control/VBoxContainer2/Button4/altD.texture= null
 
 
-# Função chamada quando o botão é pressionado
 func _on_alterar_musica_pressed() -> void:
 	# Parar a música atual
 	musics[current_music_index].stop()

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://271dd5d9-c7da-4478-99a2-bd0777a00649"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "MRU significa:"
+type = 0
+options = Array[String](["Movimento Retilíneo Uniforme", "Movimento Regular e Útil", "Movimento Radial Útil", "Movimento Recíproco Único"])
+currect = "Movimento Retilíneo Uniforme"

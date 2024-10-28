@@ -1,6 +1,7 @@
 extends Node
 
 var is_dialog_open = false
+var quiz_open = false
 # Armazena o progresso do diálogo para cada professor
 var dialog_progress = {
 	0: 0,  # Progresso do professor 1

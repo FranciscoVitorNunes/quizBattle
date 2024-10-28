@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://daa34c66-7938-4495-9070-87d2be7c04ec"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual dessas é uma propriedade específica?"
+type = 0
+options = Array[String](["Volume", "Massa", "Densidade", "Altura"])
+currect = "Densidade"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://10da2534-35b6-4cad-9334-abee1556cadf"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Os metais estão em qual lado da tabela?"
+type = 0
+options = Array[String](["Esquerda", "Centro", "Direita", "Inferior"])
+currect = "Esquerda"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://75418f7e-c959-4393-9b3d-c9519fa42417"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual é a unidade básica dos seres vivos?"
+type = 0
+options = Array[String](["Átomo", "Célula", "Molécula", "Tecidos"])
+currect = "Célula"

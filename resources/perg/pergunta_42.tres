@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://67adb4c9-a1f1-4d46-9ab0-b9357a901336"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A velocidade média é:"
+type = 0
+options = Array[String](["Distância dividida pelo tempo", "Força multiplicada pelo tempo", "Distância vezes tempo", "Massa dividida pelo tempo"])
+currect = "Distância dividida pelo tempo"

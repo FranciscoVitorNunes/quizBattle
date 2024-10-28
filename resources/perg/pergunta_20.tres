@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://acbcae32-622f-4717-83af-3b5a429c48e7"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual estado da matéria tem forma fixa?"
+type = 0
+options = Array[String](["Líquido", "Gasoso", "Sólido", "Plasma"])
+currect = "Sólido"

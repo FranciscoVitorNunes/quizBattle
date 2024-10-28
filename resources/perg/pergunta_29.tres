@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://2d40bf63-e43b-43aa-8812-63a2dcfd3d45"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "A periodicidade se refere a:"
+type = 0
+options = Array[String](["Peso dos elementos", "Propriedades que se repetem", "Cor dos elementos", "Altura dos elementos"])
+currect = "Propriedades que se repetem"

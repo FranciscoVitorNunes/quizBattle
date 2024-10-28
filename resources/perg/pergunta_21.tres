@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestionQuiz" load_steps=2 format=3 uid="uid://bbe0c209-fad6-4b01-88dd-a30709da1c9f"]
+
+[ext_resource type="Script" path="res://script/resource/question.gd" id="1_bwnvs"]
+
+[resource]
+script = ExtResource("1_bwnvs")
+question_info = "Qual partícula tem carga positiva?"
+type = 0
+options = Array[String](["Nêutron", "Elétron", "Próton", "Núcleo"])
+currect = "Próton"

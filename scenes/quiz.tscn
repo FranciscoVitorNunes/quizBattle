@@ -1,10 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://x144x8cw7h08"]
+[gd_scene load_steps=24 format=3 uid="uid://x144x8cw7h08"]
 
 [ext_resource type="Script" path="res://script/controllers/game_controller.gd" id="1_marxr"]
 [ext_resource type="Texture2D" uid="uid://taxc8t5qdguh" path="res://sprites/quiz/balao.png" id="3_te7py"]
 [ext_resource type="Texture2D" uid="uid://bpicic81hlxj1" path="res://sprites/professores/ana.png" id="4_l5aie"]
 [ext_resource type="Texture2D" uid="uid://c5mh4x7jot7rq" path="res://sprites/professores/jonata.png" id="4_mh1s6"]
 [ext_resource type="Texture2D" uid="uid://bi45k5opklw02" path="res://sprites/quiz/botao_neutro.png" id="4_xrmcr"]
+[ext_resource type="Texture2D" uid="uid://dw3g02hx6ku63" path="res://sprites/professores/machi.png" id="6_ac3np"]
 [ext_resource type="AudioStream" uid="uid://c8l5w7704pmhd" path="res://sons/cottagecore-17463.mp3" id="8_452fp"]
 [ext_resource type="AudioStream" uid="uid://ca3a27h6mhd1l" path="res://sons/ambiente2.mp3" id="8_iwgum"]
 [ext_resource type="AudioStream" uid="uid://gjxryd3owj24" path="res://sons/ambiente_aecustico.mp3" id="9_tyvuj"]
@@ -32,6 +33,66 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ana:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("machi:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lklos"]
+resource_name = "ana"
+length = 1.20002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ana:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_iprtw"]
+resource_name = "machi"
+length = 1.20002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("machi:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
 
 [sub_resource type="Animation" id="Animation_8h230"]
 resource_name = "prof"
@@ -54,6 +115,8 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_00an3"]
 _data = {
 "RESET": SubResource("Animation_ksx2a"),
+"ana": SubResource("Animation_lklos"),
+"machi": SubResource("Animation_iprtw"),
 "prof": SubResource("Animation_8h230")
 }
 
@@ -316,6 +379,7 @@ text = "refazer"
 [node name="AudioErro" type="AudioListener2D" parent="."]
 
 [node name="Ana" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(22, 145)
 scale = Vector2(1.21875, 1.21154)
 texture = ExtResource("4_l5aie")
@@ -326,6 +390,13 @@ visible = false
 position = Vector2(21, 145)
 scale = Vector2(1.1875, 1.21154)
 texture = ExtResource("4_mh1s6")
+hframes = 2
+
+[node name="machi" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(21, 145)
+scale = Vector2(1.1875, 1.21154)
+texture = ExtResource("6_ac3np")
 hframes = 2
 
 [node name="ambiente1" type="AudioStreamPlayer2D" parent="."]
