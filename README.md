@@ -15,7 +15,6 @@ O jogador interage com personagens (professores), que apresentam diálogos conte
 - 🧠 Lógica com sistema de autoload (`Globals.gd`)
 
 
-```
 
 ## ▶️ Como rodar o projeto
 
